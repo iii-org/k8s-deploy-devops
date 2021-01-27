@@ -5,6 +5,9 @@
 此非標準作法，但因應特殊狀況需求(單點Node，4CPU、 8GB、64GB硬碟環境、網路速度1Gbps，使用者人數1~2人)　　
 此安裝方法新增節點無法提升devops處理能力, 僅可增加可部屬的專案數量，因此建議僅用於個人或是測試用途
 
+## 須注意事項
+* gitlab用http是因為rancher pipleline只能與http或是有有效憑證的做結合，自簽的無法認證
+
 測試環境1: `172.16.0.181`  
 * rancher: rancher.172.16.0.181.xip.io  
 * gitlab: rancher.172.16.0.181.xip.io  
