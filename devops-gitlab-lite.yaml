@@ -93,12 +93,16 @@ nginx-ingress:
 postgresql:
   install: false
 gitlab:
+  migrations:
+    enabled: false
   webservice:
     minReplicas: 1
     maxReplicas: 1
   sidekiq:
+    enabled: false
     minReplicas: 1
     maxReplicas: 1
   gitlab-shell:
+    enabled: false
     minReplicas: 1
     maxReplicas: 1
