@@ -1,0 +1,17 @@
+replicaCount: 2
+strategyType: Recreate
+storageClass:
+  name: iiidevops-nfs-storage
+  defaultClass: true
+  allowVolumeExpansion: true
+  reclaimPolicy: Delete
+  archiveOnDelete: true
+  accessModes: ReadWriteOnce
+nfs:
+  # 這裡切換成想要的NFS Server目標
+  server: "120.105.128.219"
+  path: "/iiidevopsNFS"
+rbac:
+  create: true
+serviceAccount:
+  create: true
