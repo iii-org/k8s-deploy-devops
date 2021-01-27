@@ -13,11 +13,11 @@
 * gitlab:12.10.6
 
 ## 資料庫連線HOST
-db: `devops-db-postgresql-headless`  
+### db: `devops-db-postgresql-headless`  
 * password:
   * secret: `devops-db-postgresql`   
-    key: `postgresql-password`
-redis: `devops-redis-headless`  
+    key: `postgresql-password`  
+### redis: `devops-redis-headless`  
 * password:
   * secret: `devops-redis`  
     key: `redis-password`
