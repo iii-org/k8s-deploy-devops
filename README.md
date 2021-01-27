@@ -33,5 +33,18 @@
 ## (選擇性)安裝NFS Server在本機端
 由於考慮到裝置節點的網路速度需可在一般桌機筆電的環境下使用，因此本專案全部都採用NFS
 
+## containerd insecure registry
+https://github.com/rancher/rke2/blob/master/docs/advanced.md
+### rke2
+```sh
+cd /var/lib/rancher/rke2/agent/etc/containerd/
+cp config.toml config.toml.tmpl
+nano config.toml.tmpl 增加上 下面字串  
+
+[plugins.cri.registry.configs."harbor.172.16.0.181.xip.io".tls]
+  insecure_skip_verify = true
+
+```
+
 ## 安裝步驟
 * 前置安裝Helm與repo清單: `sh ./install-helm-repo.sh`
