@@ -13,8 +13,14 @@
 * gitlab:12.10.6
 
 ## 資料庫連線HOST
-db: `devops-db-postgresql-headless`
-redis: `devops-redis-headless`
+db: `devops-db-postgresql-headless`  
+* password:
+  * secret: devops-db-postgresql  
+    key: postgresql-password
+redis: `devops-redis-headless`  
+* password:
+  * secret: devops-redis  
+    key: redis-password
 
 ## (選擇性)安裝NFS Server在本機端
 由於考慮到裝置節點的網路速度需可在一般桌機筆電的環境下使用，因此本專案全部都採用NFS
