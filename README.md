@@ -5,7 +5,7 @@
 此非標準作法，但因應特殊狀況需求(單點Node，4CPU、 8GB、64GB硬碟環境、網路速度1Gbps，使用者人數1~2人)　　
 此安裝方法新增節點無法提升devops處理能力, 僅可增加可部屬的專案數量，因此建議僅用於個人或是測試用途
 
-測試環境1: `172.16.0.181`
+測試環境1: `172.16.0.181`  
 測試環境2: `120.105.129.176`
 
 ## 各系統版本
@@ -15,12 +15,12 @@
 ## 資料庫連線HOST
 db: `devops-db-postgresql-headless`  
 * password:
-  * secret: devops-db-postgresql  
-    key: postgresql-password
+  * secret: `devops-db-postgresql`   
+    key: `postgresql-password`
 redis: `devops-redis-headless`  
 * password:
-  * secret: devops-redis  
-    key: redis-password
+  * secret: `devops-redis`  
+    key: `redis-password`
 
 ## (選擇性)安裝NFS Server在本機端
 由於考慮到裝置節點的網路速度需可在一般桌機筆電的環境下使用，因此本專案全部都採用NFS
