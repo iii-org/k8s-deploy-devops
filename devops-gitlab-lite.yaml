@@ -2,18 +2,18 @@ global:
   edition: ce
   hosts:
     domain: "172.16.0.181.xip.io"
-    https: true
-    #gitlab:
-    #  name: gitlab.172.16.0.181.xip.io
-    #  https: true
+    https: false
+    gitlab:
+      name: gitlab.172.16.0.181.xip.io
+      https: false
   ## doc/charts/globals.md#configure-ingress-settings
   ingress:
     class: nginx
     configureCertmanager: false
     enabled: true
-    #tls: 
-    #   enabled: true
-    #   secretName: gitalb-tls
+    tls: 
+       enabled: false
+       secretName: gitalb-tls
   initialRootPassword:
     secret: devops-gitlab-initial-root-password
     key: password
@@ -109,3 +109,6 @@ gitlab:
     enabled: false
     minReplicas: 1
     maxReplicas: 1
+persistence:
+  enabled: true
+  size: 10Gi
