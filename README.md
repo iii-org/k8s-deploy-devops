@@ -7,6 +7,10 @@
 * rancher:2.4.6
 * gitlab:12.10.6
 
+## (選擇性)安裝NFS Server在本機端
+若已有公有雲或私有雲的儲存空間則不須此步驟
+
+
 ## 安裝步驟
 * 前置安裝Helm與repo清單: `install-helm-repo.sh`
 
