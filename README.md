@@ -3,10 +3,10 @@
 
 測試環境 172.16.0.181
 
+## 各系統版本
+* rancher:2.4.6
+* gitlab:12.10.6
+
 ```sh
-sudo snap install helm --classic
-# cert-manager
-helm repo add jetstack https://charts.jetstack.io
-# rancher
-helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+
 ```
