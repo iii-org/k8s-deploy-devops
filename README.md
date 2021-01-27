@@ -1,4 +1,4 @@
-# k8s-deploy-devops
+# k8s-deploy-devops-lite
 部屬devops服務在各種k8s叢集內(rke2、microk8s、minikube)    如果他該叢集和rancher不衝突就沒問題XD
 
 測試環境 172.16.0.181
