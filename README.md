@@ -9,6 +9,8 @@
 * rancher: rancher.172.16.0.181.xip.io  
 * gitlab: rancher.172.16.0.181.xip.io  
 * minio: minio.172.16.0.181.xip.io
+* dev-db-gui: http://172.16.0.181:32726/
+  
 測試環境2: `120.105.129.176`
 
 ## 各系統版本
